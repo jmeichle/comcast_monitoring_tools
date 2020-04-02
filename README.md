@@ -2,8 +2,11 @@
 
 ## What is this repo:
 
+![Graphs!](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/look_at_this_graph.gif?raw=true)
+
 ```
-3 python scripts that give better visibility into Comcast Xfinity status than a 184,000 person company
+3 python scripts that give better visibility into Comcast
+Xfinity status than a 184,000 person company
 ```
 
 Note: this code is awful, but does what it needs to. It is not a reflection of bulletproof monitoring, but instead a means to gain visibility into different network behaviors.
