@@ -74,9 +74,13 @@ So I wrote the IPv4 and IPv6 scripts.
 - Xbox over T-Mobile wifi gives ~30ms ping, which is nice
 
 
-## Screenshots
+## Screenshots and Updates
 
 Here is a view for the first 2 hours since running all three scripts, showing the tail end of the evening as people wind down their usages:
 
 ![ICMP, IPv4, and IPv6 connectivity](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/2020-04-01_23:20:00_to_2020-04-02_01:20:00_ICMP_IPv4_IPv6.png?raw=true)
+
+Here we see an example where IPv4 connectivity was lost for ~18 minutes, with no real impact to ICMP or IPv6 connectivity. Connecitivty was confirmed by Gmail, Google Drive, etc all continuing to work over IPv6.
+
+![IPv4 only outage](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/2020-04-02_13:40:00_to_2020-04-02_14:30:00_ICMP_IPv4_IPv6.png?raw=true)
 
