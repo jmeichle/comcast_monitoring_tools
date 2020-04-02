@@ -69,3 +69,11 @@ So I wrote the IPv4 and IPv6 scripts.
 - *stay indoors*
 - Run the IPv4 and IPv6 scrapers for a bit, and update this repo with more fun screenshots
 - Xbox over T-Mobile wifi gives ~30ms ping, which is nice
+
+
+## Screenshots
+
+Here is a view for the first 2 hours since running all three scripts, showing the tail end of the evening as people wind down their usages:
+
+![ICMP, IPv4, and IPv6 connectivity](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/2020-04-01_23:20:00_to_2020-04-02_01:20:00_ICMP_IPv4_IPv6.png?raw=true)
+
