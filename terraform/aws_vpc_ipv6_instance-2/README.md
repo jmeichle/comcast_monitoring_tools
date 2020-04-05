@@ -32,17 +32,18 @@ ip6tables -A OUTPUT -p 4 -j ACCEPT
 server
 
 ```
-ip link add name ipip6 type ip6tnl mode ipip6 local $HOST_A_IPV6 remote $HOST_B_IPV6
-ip addr add dev ipip6 172.16.0.1/24
-ip link set dev ipip6 up
+ip link add name ipv4overipv6dev0 type ip6tnl mode ipip6 local $HOST_A_IPV6 remote $HOST_B_IPV6
+ip addr add dev ipv4overipv6dev0 172.16.0.1/24
+ip link set dev ipv4overipv6dev0 up
+ip route add 172.16.0.2 dev ipv4overipv6dev0
 ```
 
 1. Configure host B for the tunnel:
 
 ```
-ip link add name ipip6 type ip6tnl mode ipip6 local $HOST_B_IPV6 remote $HOST_A_IPV6
-ip addr add dev ipip6 172.16.0.2/24
-ip link set dev ipip6 up
+ip link add name ipv4overipv6dev0 type ip6tnl mode ipip6 local $HOST_B_IPV6 remote $HOST_A_IPV6
+ip addr add dev ipv4overipv6dev0 172.16.0.2/24
+ip link set dev ipv4overipv6dev0 up
 ```
 
 1. ICMP ping the virtual IPv4 address of Host B from Host A:
