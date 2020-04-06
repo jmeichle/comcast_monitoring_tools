@@ -148,7 +148,7 @@ and a capture on the AWS side shows no packets arrive at all.
 
 When pinging from the AWS instance to my laptop over this tunnel my laptop receives the ICMP echo request with the IPv6 and encapsulated IPv4 header, and attempts to send the echo response.
 
-![Received IPv4 over IPv6 ICMP Echo Request, and Echo Reply](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/1-laptop_pinging_aws_instance_via_ipip6_tunnel.jpg?raw=true)
+![Received IPv4 over IPv6 ICMP Echo Request, and Echo Reply](https://github.com/jmeichle/comcast_monitoring_tools/blob/master/_images/2-aws_instance_pinging_laptop_via_ipip6_tunnel.jpg?raw=true)
 
 To rule out a misconfiguration within AWS, I spun up a second IPv6 instance in the us-west-2 region and did the same configuration and everything worked fine.
 
